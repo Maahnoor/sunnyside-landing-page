@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    
+
+    <div id="header">
+
+      <div id="sub-header-1"> <!-- nav -->
+        <img id="logo" src="images/logo.svg" alt="/"> <!-- drop down label -->
+
+          <img onclick="myFunction()" class="dropbtn" src="images/icon-hamburger.svg" alt="/"> <!-- caretdown -->
+        
+            <ul id="myDropdown" class="menu">
+              <li><a href="#About">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+
+      </div>
+
+      
+      <h1>We are creatives</h1>
+
+
+      <img id="header-arrow" src="images/icon-arrow-down.svg" alt="/">
+
+    </div>
+
+    <div id="transform">
+
+      <picture>
+        <source media="(min-width:960px)" srcset="images/desktop/image-transform.jpg">
+        <source srcset="images/mobile/image-transform.jpg">
+      <img id="transform-img" src="images/mobile/image-transform.jpg" alt="/">
+      </picture>
+
+
+
+      <div id="sub-transform">
+
+        <h1>Transform your brand</h1>
+
+
+        <p class="para">We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+
+        <h4 class="learn-more">Learn more</h4>
+
+      </div>
+
+    </div>
+
+    <div id="standout">
+
+      <picture>
+        <source media="(min-width:720px)" srcset="images/desktop/image-stand-out.jpg">
+          <source srcset="images/mobile/image-stand-out.jpg">
+
+        <img id="standout-img" src="images/mobile/image-stand-out.jpg" alt="/">
+      </picture>
+
+      <div id="sub-standout">
+
+        <h1>Stand out to the right audience</h1>
+
+        <p class="para">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+
+        <h4 class="learn-more">Learn more</h4>
+      </div>
+
+    </div>
+
+    <div id="graphic-photography">
+
+      <div id="graphic-design">
+
+        <h1>Graphic design</h1>
+        <p class="para">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+
+      </div>
+
+      <div id="photography">
+
+        <h1>Photography</h1>
+        <p class="para">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+
+      </div>
+
+    </div>
+
+    <div id="testimonials">
+
+      <h3>Client testimonials</h3>
+
+      <div id="sub-testimonials">
+
+          <div>
+
+            <img src="images/image-emily.jpg" alt="/">
+            <p class="para">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <h4>Emily R.</h4>
+            <h5>Marketing Director</h5>
+
+          </div>
+
+          <div>
+            <img src="images/image-thomas.jpg" alt="/">
+            <p class="para">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <h4>Thomas S.</h4>
+            <h5>Chief Operating Officer</h5>
+
+          </div>
+
+
+          <div>
+            <img src="images/image-jennie.jpg" alt="/">
+            <p class="para">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <h4>Jennie F.</h4>
+            <h5>Business Owner</h5>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <div id="gallery">
+      <picture>
+        <source media="(min-width:720px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+          <source srcset="images/mobile/image-gallery-milkbottles.jpg" >
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="/">
+      </picture>
+      <picture>
+        <source media="(min-width:720px)" srcset="images/desktop/image-gallery-orange.jpg">
+          <source srcset="images/mobile/image-gallery-orange.jpg" >
+        <img src="images/mobile/image-gallery-orange.jpg" alt="/">
+      </picture>
+      <picture>
+        <source media="(min-width:720px)" srcset="images/desktop/image-gallery-cone.jpg">
+          <source srcset="images/mobile/image-gallery-cone.jpg" >
+        <img src="images/mobile/image-gallery-cone.jpg" alt="/">
+      </picture>
+      <picture>
+        <source media="(min-width:720px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+          <source srcset="images/mobile/image-gallery-sugar-cubes.jpg" >
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="/">
+      </picture>
+
+      
+    </div>
+
+    <div id="footer">
+
+      <div id="sub-footer">
+        <img id="footer-logo" src="images/logo-footer.svg"  alt="/">
+
+        <div id="footer-menu">
+          <div><p>About</p></div>
+          <div><p>Services</p></div>
+          <div><p>Projects</p></div>
+        </div>
+      </div>
+
+        <div id="socials">
+          <img src="images/icon-facebook.svg" alt="/">
+          <img src="images/icon-instagram.svg" alt="/">
+          <img src="images/icon-twitter.svg" alt="/">
+          <img src="images/icon-pinterest.svg" alt="/">
+
+        </div>
+
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Maahnoor" target="_blank">Maah Noor</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

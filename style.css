@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+:root{
+
+	/*primary*/
+	--Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);  /*(graphic design text)*/
+    --Dark-blue : hsl(198, 62%, 26%);  /*(photography text)*/
+    --Dark-moderate-cyan : hsl(168, 34%, 41%); /*(footer)*/
+
+    /*neutral*/
+    --Verydark-desaturated-blue: hsl(212, 27%, 19%);
+	--Verydark-grayish-blue: hsl(213, 9%, 39%);
+	--Dark-grayish-blue: hsl(232, 10%, 55%);
+	--Grayish-blue: hsl(210, 4%, 67%);
+	--White: hsl(0, 0%, 100%);
+
+
+	--fw-barlow-bold: 600;
+	--fw-bold: 700;
+	--fw-extra-bold: 900;
+}
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+
+body{
+
+
+font-family: 'Fraunces', serif;
+font-size: 18px;
+}
+
+main{
+	width: 100%;
+}
+/*////////////////header///////////////*/
+
+
+
+#header{
+	background-image: url(images/mobile/image-header.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: var(--White);
+	font-weight: var(--fw-extra-bold);
+	font-size: 1.25rem;
+	width: 100%;
+	min-height: 520px;
+	display: flex;
+	flex-direction: column;
+
+}
+#header h1{
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1em;
+}
+
+#sub-header-1{
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+}
+.dropbtn{
+	cursor: pointer;
+}
+.menu{
+	display: none;
+
+}
+#sub-header-1 ul{
+	position: absolute;
+	background: var(--White);
+	list-style: none;
+	top: 3.5em;
+	right: 0;
+	width: 78%;
+	margin: 2em;
+
+}
+
+#sub-header-1 .menu:before{
+	position: absolute;
+	content: '';
+	top: -20px;
+	right: 0;
+	width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right:20px solid var(--White);
+}
+
+
+#sub-header-1 ul li{
+	line-height: 2em;
+	padding: 0.5em;
+	text-align: center;
+}
+
+#sub-header-1 ul{
+	padding: 1.5em 0;
+}
+/*#sub-header-1 ul:first-child{
+	padding-top: 1.5em;
+}*/
+
+#sub-header-1 ul li a{
+	color: var(--Verydark-grayish-blue);
+	text-decoration: none;
+	font-family: 'Barlow', sans-serif;
+	transition: 0.3s;
+	font-weight: var(--fw-barlow-bold);
+}
+
+#sub-header-1 ul li a:hover{
+	color: var(--Verydark-desaturated-blue);
+	background-color: var(--Yellow);
+	padding: 0.75em;
+	text-transform: uppercase;
+	border-radius: 1.75em;
+	font-family: 'Fraunces', serif;
+	font-weight: var(--fw-bold);
+
+}
+
+
+.show{
+	display: block;
+}
+
+
+
+
+
+#header-arrow{
+	width: 2.25rem;
+	align-self: center;
+}
+
+
+
+/*//////////////////transform//////////////////////*/
+
+#transform{
+
+}
+
+
+#transform-img, #standout-img{
+	/*object-fit: 100%*/
+	width: 100%;
+}
+
+#sub-transform{
+	text-align: center;
+	padding: 3em 1em;
+}
+
+.para{
+	font-size: 1.15rem;
+	font-family: 'Barlow', sans-serif;
+	color: var(--Verydark-grayish-blue);
+	padding: 1.5em 0;
+	line-height: 2rem;
+}
+
+.learn-more{
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+.learn-more:hover{
+	cursor: pointer;
+	opacity: 1;
+	transition: 0.3s;
+}
+#sub-transform .learn-more:hover{
+	text-decoration-color:  rgb(250, 212, 0);
+}
+#sub-standout .learn-more:hover{
+	text-decoration-color:  rgb(254, 120, 103);
+
+}
+#sub-transform .learn-more{
+	text-decoration: underline solid 7px rgba(250, 212, 0,0.3);
+	text-underline-offset: -4px;
+}
+
+#sub-standout .learn-more{
+	text-decoration: underline solid 7px rgba(254, 120, 103,0.3);
+	text-underline-offset: -4px;
+}
+
+/*//////standout//////////*/
+#sub-standout{
+	text-align: center;
+	padding: 3em 1em;
+}
+
+/*////////graphic design////////*/
+
+#graphic-design{
+	background-image: url(images/mobile/image-graphic-design.jpg);
+	color: var(--Dark-desaturated-cyan);
+}
+
+#graphic-design,#photography{
+	background-size: cover;
+	min-height: 620px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	padding: 1.5em 0.5em;
+}
+
+
+
+#graphic-design > p,#photography > p{
+	font-size: 1rem;
+	line-height: 1.75rem;
+}
+
+/*/////////////photography///////////*/
+#photography{
+	background-image: url(images/mobile/image-photography.jpg);
+	color: var(--Dark-blue)
+}
+
+
+
+/*//////testimonials//////////*/
+#testimonials{
+	padding:3.5em 1em 1.5em 1em;
+}
+#testimonials h3{
+	font-size: 1rem;
+	color: var(--Grayish-blue);
+
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+}
+#sub-testimonials > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 4em 0;
+}
+#testimonials h4{
+	font-weight: var(--fw-extra-bold);
+	margin: 0.5em 0;
+}
+#testimonials h5{
+	color: var(--Grayish-blue);
+	font-family: 'Barlow', sans-serif;
+	font-weight: var(--fw-barlow-bold);
+}
+#testimonials img{
+	border-radius: 50%;
+	width: 4.25em;
+	/*margin-top: 3.5em;*/
+}
+
+/*/////////gallery////*/
+#gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#gallery picture img{
+		height: 100%;
+	}
+#gallery img{
+	width: 100%;
+}
+
+/*///////footer//////*/
+#footer{
+	background-color:  #8bd0c3;
+	color: var(--Dark-desaturated-cyan);
+	min-height: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom:  1.8em;
+}
+
+#sub-footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 150px;
+	width: 100%;
+}
+
+#footer-logo{
+	width: 10em;
+}
+
+#footer-menu{
+	min-width: 80%;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Barlow', sans-serif;
+	color: var(--Dark-desaturated-cyan);
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+#footer-menu div:hover{
+	color: white;
+	cursor: pointer;
+}
+
+#socials{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+#socials img{
+	transition: 0.3s;
+	
+}
+#socials img:hover{
+	cursor: pointer;
+	filter: brightness(0) invert(1);
+}
+
+
+
+@media (min-width: 720px){
+	#header{
+		background-image: url(images/desktop/image-header.jpg);
+		background-position: center;
+		min-height: 100vh;
+	}
+	#header h1{
+		font-size: 3.75rem;
+		padding: 0.75em;
+	}
+	
+	#sub-transform h1, #sub-standout h1{
+		font-size: 2.25rem;
+	}
+	#sub-transform .para,#sub-standout .para{
+		font-size: 1.35rem
+	}
+	#transform{
+		display: flex;
+		flex-direction: row-reverse;
+
+	}
+
+	#standout, #graphic-photography{
+		display: flex;
+	}
+	#sub-transform{
+		padding: 7em 4em 7em 7em;
+	}
+	#sub-standout{
+		padding: 7em 7em 7em 4em;
+	}
+	#sub-transform,#sub-standout{
+		text-align: left;
+		flex-basis: 50%;
+		min-width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#transform-img,#standout-img{
+		height: 100%;
+	}
+	#graphic-design,#photography{
+		flex-basis: 50%;
+		min-width: 50%;
+	}
+
+
+	#graphic-design{
+		background-image: url(images/desktop/image-graphic-design.jpg);
+		background-position: center;
+
+	}
+	#photography{
+		background-image: url(images/desktop/image-photography.jpg);
+		background-position: center;
+
+	}
+	#graphic-design .para,#photography .para{
+		padding: 1.5em 10em;
+	}
+
+	#testimonials{
+		padding: 7em 0;
+	}
+	
+	#sub-testimonials{
+		display: flex;
+		justify-content: center;
+		padding: 4em 4em 0 4em;
+	}
+	#sub-testimonials >div{
+		padding: 0 1.5em;
+		margin: 0;
+	}
+
+	#gallery{
+		grid-template-columns: repeat(4,1fr);
+	}
+	#footer-menu{
+		min-width: 30%;
+	}
+	#socials{
+		width: 30%;
+	}
+	.menu{
+		display: block;
+	}
+	.dropbtn{
+		display: none;
+	}
+	#myDropdown{
+		display: flex;
+		justify-content: space-evenly;
+		min-width: 40%
+	}
+	#sub-header-1 ul{
+	position: static;
+	background: transparent;
+	list-style: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	}
+	#sub-header-1 ul li a{
+		color: var(--White);
+	}
+	#sub-header-1 ul li a:hover{
+		color: var(--White);
+		background-color: rgb(111, 207, 255);
+	}
+	#sub-header-1 .menu:before{
+	display: none;
+}
+
+	#logo{
+		min-width: 15%;
+		height: auto;
+	}
+
+}
